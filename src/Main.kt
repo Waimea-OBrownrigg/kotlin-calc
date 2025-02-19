@@ -4,5 +4,45 @@ fun main() {
     println("====================        In Fact, I Doubt You Could Find A More Normal Calculator Than This One!        ====================")
     println("                ===============================================================================================")
 
+    var operator = 
 
+    val num_one = get_number("Input a number: ")
+    while (true) {
+        print("enter an operator (+,-,*,/): ")
+        var operator = readLine()
+        if (operator == "+") {
+            break
+        }
+        if (operator == "-") {
+            break
+        }
+        if (operator == "*") {
+            break
+        }
+        if (operator == "/") {
+            break
+        }
+        else {
+            continue
+        }
+
+    }
+    val num_two = get_number("Input another number: ")
+
+    when (operator)
+
+}
+
+fun get_number(prompt: String): Int{
+    var user_input: Int?
+    while (true) {
+        print(prompt)
+        user_input = readln().toIntOrNull()
+        if (user_input == null) {
+            continue
+        }
+        else {
+            return user_input
+        }
+    }
 }
