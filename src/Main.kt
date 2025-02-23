@@ -4,22 +4,27 @@ fun main() {
     println("====================        In Fact, I Doubt You Could Find A More Normal Calculator Than This One!        ====================")
     println("                ===============================================================================================")
 
-    var operator = 
+    var operator:String = "1"
 
     val num_one = get_number("Input a number: ")
     while (true) {
         print("enter an operator (+,-,*,/): ")
-        var operator = readLine()
+        val operator = readLine()
+        println(operator)
         if (operator == "+") {
+            println(operator)
             break
         }
         if (operator == "-") {
+            println(operator)
             break
         }
         if (operator == "*") {
+            println(operator)
             break
         }
         if (operator == "/") {
+            println(operator)
             break
         }
         else {
@@ -27,9 +32,17 @@ fun main() {
         }
 
     }
+
     val num_two = get_number("Input another number: ")
 
-    when (operator)
+    val result = when (operator) {
+        "+" -> num_one + num_two
+        "-" -> num_one - num_two
+        "*" -> num_one * num_two
+        "/" -> num_one / num_two
+        else -> {0}
+    }
+    println("The answer is ${result}!")
 
 }
 
